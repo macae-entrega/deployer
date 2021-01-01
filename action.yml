@@ -1,0 +1,5 @@
+name: 'macae-entrega-deployer'
+description: 'Deploy on EC2'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
