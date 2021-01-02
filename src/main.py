@@ -18,7 +18,7 @@ dockerfolder = pathlib.Path(__file__).parent.parent.absolute()
 deployment = os.environ['DEPLOYMENT']
 project_name = os.environ['PROJECT']
 
-#run_commands([ f'aws s3 sync {dockerfolder}/s3 s3://{project_name}/deployment_files' ])
+#run_commands([ f'aws s3 sync {dockerfolder}/ec2 s3://{project_name}/deployment_files/deployer' ])
 
 ec2_instance = ec2.create_instance(f'{project_name}-{deployment}-warmup')
 
