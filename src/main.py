@@ -14,7 +14,7 @@ def log(txt):
 
 log('started')
 
-dockerfolder = pathlib.Path(__file__).parent.parent.absolute()
+dockerfolder = pathlib.Path(__file__).parent.absolute()
 deployment = os.environ['DEPLOYMENT']
 project_name = os.environ['PROJECT']
 

@@ -9,7 +9,7 @@ import time
 from datetime import datetime
 import pathlib
 
-dockerfolder = pathlib.Path(__file__).parent.parent.absolute()
+dockerfolder = pathlib.Path(__file__).parent.absolute()
 
 def log(txt):
   print(f'{datetime.now()}- {txt}')

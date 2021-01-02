@@ -14,7 +14,7 @@ sudo curl -L --fail https://raw.githubusercontent.com/linuxserver/docker-docker-
 sudo chmod +x /usr/local/bin/docker-compose >> log/setup_e 2>> log/setup_e
 
 # S3 Sync
-aws s3 sync s3://$PROJECT/deployment_files . > log/setup 2> log/setup_e
+aws s3 sync s3://$PROJECT/deployment_files/$DEPLOYMENT . > log/setup 2> log/setup_e
 
 # in all repos
 for d in */ ; do
