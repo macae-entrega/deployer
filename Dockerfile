@@ -9,5 +9,4 @@ COPY src /dockerfolder
 #  When GitHub Actions is running, it mounts
 # the whole repository on /github/workspace,
 # and changes the workdir to there on run.
-#ENTRYPOINT ["python3", "/dockerfolder/main.py"]
-ENTRYPOINT ["echo", "worked!!"]
+ENTRYPOINT ["python3", "/dockerfolder/main.py"]
